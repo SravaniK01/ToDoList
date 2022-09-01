@@ -1,0 +1,48 @@
+<div>
+    <!-- <table>
+        <tbody>
+            <tr *ngFor ="let l of todo ; let i = index"
+             >
+               <p> {{ i + 1}}</p>
+                <td *ngIf = "!l.completed">
+                     <button (click)="completeTask(l)"> Complete </button> 
+                </td>
+         
+                
+                <td>
+                    <p *ngIf = "!l.completed" >
+                        {{l.task}}
+                    </p>
+                    <p *ngIf = "l.completed" style="text-decoration: line-through;">
+                        {{l.task}}
+                    </p>
+                </td> 
+                <td>
+                    <button (click)="removeTask(l)">X</button>
+                </td>
+            </tr> 
+        </tbody>
+    </table> -->
+
+    
+    <table>
+        <tbody>
+            <tr>
+                <td style="width: 300px;">
+                    <button *ngIf="!todo.completed" (click)="completeTask(todo)" [ngClass]="'complete'"> Complete
+                    </button>
+                    <span [class.completed]="todo.completed">
+                        {{todo.task}}
+                    </span>
+
+                </td>
+                <td>
+                    <button (click)="removeTask(todo)"> X </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>

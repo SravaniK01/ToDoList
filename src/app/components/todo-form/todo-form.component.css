@@ -1,0 +1,13 @@
+.add{
+    background-color: deeppink;
+     color: white;
+        
+
+}
+td , input,button{
+    font-family: Open Sans; 
+    font-weight: 300px;
+    width: 100%;
+    border-color: #eee;
+    
+ }

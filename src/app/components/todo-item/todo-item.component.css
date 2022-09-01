@@ -1,0 +1,14 @@
+td{
+font-family: Open Sans; 
+font-weight: 300px;
+}
+.completed{
+    text-decoration: line-through;
+}
+.complete{
+    color: pink;
+    border-color: pink;
+    border-style: groove;
+    background-color: white;
+    border-radius: 5px;
+}

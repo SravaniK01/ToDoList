@@ -1,0 +1,21 @@
+<div class="todo-lists">
+    <table>
+        <tbody>
+            <tr>
+                <h2>To-Do List</h2>
+                <p>A place to store your todos</p>
+            </tr>
+
+            <tr *ngFor="let l of list ; let i = index">
+                <app-todo-item [todo]="l" (complete)="updateComplete($event)" (remove)="updateRecord($event)">
+                </app-todo-item>
+            </tr>
+            <tr>
+                <app-todo-form (save)="addTaskToList($event)"></app-todo-form>
+            </tr>
+        </tbody>
+
+    </table>
+
+    
+</div>

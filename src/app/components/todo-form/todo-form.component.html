@@ -1,0 +1,23 @@
+<p>
+    Enter a new task:
+</p>
+<form (ngSubmit)="addTask()">
+    <div>
+        <table style="white-space:nowrap;width:100%;">
+            <tbody>
+                <tr>
+                    <td>
+                        <input name='name' id='name' [(ngModel)]="task1" >
+                    </td>
+                </tr>
+                <tr>
+                    <button type=" submit" [ngClass]="'add'">Add</button>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+    </div>
+
+</form>
